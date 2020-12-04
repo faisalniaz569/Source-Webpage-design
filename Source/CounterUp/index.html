@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="icons/fontawesome/css/all.min.css" />
+</head>
+<body>
+    
+<div id="arch">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="ach_item">
+                    <i class="fas fa-trophy"></i>
+                    <h3 class="counter">200</h3>
+                    <p>Project Completed</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ach_item">
+                    <i class="fab fa-html5"></i>
+                    <h3 class="counter">100</h3>
+                    <p>Html template</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ach_item">
+                    <i class="fab fa-wordpress"></i>
+                    <h3 class="counter">80</h3>
+                    <p>Wordpress Theme</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ach_item">
+                    <i class="fas fa-coffee"></i>
+                    <h3 class="counter">500</h3>
+                    <p>Cup of Coffee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+ 
+  
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            
+            $('.counter').counterUp({
+                delay : 10,
+                time  : 1000
+            });
+        });
+    
+    </script>
+</body>
+</html>
