@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CK Editor</title>
+    <style>
+        body{
+            margin: 0;
+            background: #1c478e;
+            color: white;
+        }
+        
+        h1{
+            margin: 0;
+            padding: 30px 90px;
+            background: black;
+            color: white;
+        }
+        
+		.cke_chrome{
+			margin: 0 90px !important;
+		}
+    </style>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+</head>
+<body>
+    
+<h1>Ck Editor</h1>    
+ 
+<label for="Content" style="margin-left: 90px;">Content:</label>   
+<textarea name="editor1" cols="10" rows="80" id="editor1"></textarea>    
+    
+<script>
+        CKEDITOR.replace( 'editor1' );
+</script>    
+
+</body>
+</html>
