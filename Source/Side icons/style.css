@@ -1,0 +1,86 @@
+/* css style sheet */
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.row {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#offone > .column,
+#offthree > .column {
+    width: 50%;
+    float: left;
+}
+
+#offone > .column > img,
+#offtwo > .column > img,
+#offthree > .column > img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#offone > .column > p,
+#offtwo > .column > p,
+#offthree > .column > p {
+    text-align: justify;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+#offtwo > .column {
+    width: 50%;
+    float: right;
+}
+
+/*sideicons */
+
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#facebook {
+    top: 20px;
+    background-color: #3b5999;
+}
+
+#twitter {
+    top: 80px;
+    background-color: #55acee;
+}
+
+#youtube {
+    top: 140px;
+    background-color: #cd201f;
+}
+
+#linkedin {
+    top: 200px;
+    background-color: #0077B5;
+}
