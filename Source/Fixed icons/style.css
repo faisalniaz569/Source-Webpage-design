@@ -1,0 +1,114 @@
+/* css style sheet */
+
+body{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+h2{ text-align: center; }
+
+.row{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#offone > .column{
+    width: 50%;
+    float: left;
+}
+
+#offone > .column > img, 
+#offtwo > .column > img{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#offone > .column > p,
+#offtwo > .column > p{
+    text-align: justify;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+#offtwo > .column{
+    width: 50%;
+    float: right;
+}
+
+/*====== fixed floating social icons ======*/
+
+.icons{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+
+.icons ul{
+    padding: initial;
+}
+
+.icons ul li{
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: white;
+}
+
+.icons ul li a{
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.facebook > a > i, .youtube > a > i, .linkedin > a > i,
+.twitter > a > i, .instagram > a > i {
+    color: white; 
+    padding: 5px 0;
+}
+
+.facebook{
+    background: #3b5998;
+}
+
+.youtube{
+    background: #bb0000;
+}
+
+.linkedin{
+    background: #007bb5;
+}
+
+.twitter{
+    background: #55ACEE;
+}
+
+.instagram{
+    background: #e4405f;
+}
+
+.icons ul li:hover{
+    padding-left: 30px;
+    widows: 80px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
