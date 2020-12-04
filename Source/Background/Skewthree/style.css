@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main.sec1{
+    background: url(rise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main.sec2{
+    background-color: white;
+    padding: 50px 150px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+main.sec2 p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+main.sec3{
+    background: url(rise%202.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.skewed1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 100px 0 0 1400px;    /* top right bottom left */
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+.skewed2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 0 100px 1400px;    /* top right bottom left */
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+
+
+
+
+
+
+
