@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floating icons</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="icons/fontawesome/css/all.min.css" />
+</head>
+<body>
+    
+<h2>Floating Social Media Icons</h2>  
+  
+<div class="row" id="offone">
+    <div class="column">
+        <img src="officeone.png" alt="off1" />
+    </div>
+    <div class="column">
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+</div>  
+   
+<div class="row" id="offtwo">
+    <div class="column">
+        <img src="officetwo.jpg" alt="off2" style="margin-left: 20px" />
+    </div>
+    <div class="column">
+        <p style="margin-right: 15px;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+</div>
+   
+     
+<div class="row" id="offone">
+    <div class="column">
+        <img src="officethree.jpg" alt="off3" />
+    </div>
+    <div class="column">
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+</div>  
+    
+<!--floating icons-->    
+   
+<div class="fabs">
+    <i class="fas fa-times"></i>
+</div>    
+      
+<div class="box">
+    <ul>
+        <li class="facebook item item1"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="twitter item item2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="youtube item item3"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li class="linkedin  item item4"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li class="whatsapp item item5"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+</div>    
+    
+<script>
+
+document.querySelector('.fabs').addEventListener('click', function(e){
+    document.querySelector('.box').classList.toggle('box-active');
+    document.querySelector('.fabs').classList.toggle('fabs-active');
+});
+    
+</script>    
+    
+</body>
+</html>
