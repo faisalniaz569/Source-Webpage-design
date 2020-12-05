@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Slider</title>
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    
+    
+<div class="flex-container">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <a href="#"><img src="img/slide1.jpg" /></a>
+            </li>
+             
+            <li>
+                <img src="img/slide2.jpg" />
+            </li>
+             
+            <li>
+                <img src="img/slide3.jpg" />
+                <p>Designing The Well-Tempered Web</p>
+            </li>
+        </ul>
+    </div>
+</div>    
+ 
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+ 
+<script>
+$(document).ready(function () {
+    $('.flexslider').flexslider({
+        animation: 'fade',
+        controlsContainer: '.flexslider'
+    });
+});
+</script>          
+</body>
+</html>
