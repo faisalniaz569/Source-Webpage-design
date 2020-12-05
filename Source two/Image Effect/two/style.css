@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background-color: #262626;*/
+}
+
+
+/*main{
+    width: 1280px;
+    min-height: 500px;
+    background-color: white;
+    margin: 70px auto 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+    position: relative;
+    width: 33%;
+    flex-grow: 2;
+    height: 100px;
+    background: #ff0;
+    margin: 10px;
+    
+    
+}*/
+
+main {
+    /*background: #aaa;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 30px 30px 30px;
+}
+
+main > div {
+    flex-grow: 1;
+    width: 32%;
+    height: 300px;
+    margin: 5px;
+}
+
+/*main > div:nth-child(even) {
+    background: #23a;
+}
+
+main > div:nth-child(odd) {
+    background: #49b;
+}*/
+
+main > div > .imageBox {
+    position: relative;
+    overflow: hidden;
+}
+
+main > div > .imageBox > img {
+    width: 100%;
+    height: 300px;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+    transition: transform 2s;
+}
+
+main > div:hover > .imageBox > img {
+    transform: scale(1.2);
+}
+
+main > div > .imageBox > .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+main > div > .imageBox:hover > .details {
+    transform: scaleY(1);
+}
+
+main > div > .imageBox > .details > .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+main > div > .imageBox > .details > .content > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+main > div > .imageBox > .details > .content > p {
+    margin: 10px 0 0;
+    padding: 0;
+}
