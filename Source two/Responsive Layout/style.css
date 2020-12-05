@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#layout {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.container:first-child {
+    padding-top: 30px;
+}
+
+/* Clearfix (clear floats) */
+.row::after,
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html,
+body {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.clearfix {
+    height: 270px;
+}
+
+/* All columns */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+#layout img.img {
+    float: left;
+    margin-right: 10px;
+}
+
+.texttitle {
+    font: 700 22px "Exo", sans-serif;
+    color: #363636;
+    margin-bottom: 15px;
+}
+
+.clearfix p {
+    display: table;
+    font-size: 16px;
+}
+
+p span {
+    color: blueviolet;
+    font-size: xx-large;
+}
