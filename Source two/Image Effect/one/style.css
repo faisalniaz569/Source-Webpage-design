@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shrikhand&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -18,7 +19,7 @@ body, html{
     height: 100%;
 }
 
-.teamarea{
+.teamarea {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -28,7 +29,7 @@ body, html{
     justify-content: space-around;
 }
 
-.singleteam{
+.singleteam {
     width: 360px;
     height: 400px;
     padding: 24px;
@@ -41,17 +42,19 @@ body, html{
     display: flex;
     align-items: flex-end;
     transition: 0.6s ease-out;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
-.singleteam:hover{
+
+.singleteam:hover {
     transform: translateY(15px);
     cursor: pointer;
 }
-.singleteam:hover:before{
+
+.singleteam:hover:before {
     opacity: 1;
 }
 
-.singleteam img{
+.singleteam img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -60,12 +63,12 @@ body, html{
     object-fit: cover;
 }
 
-.singleteam:hover .teamtext{
+.singleteam:hover .teamtext {
     opacity: 1;
     transform: translateY(0);
 }
 
-.singleteam:before{
+.singleteam:before {
     content: '';
     position: absolute;
     top: 0;
@@ -79,7 +82,7 @@ body, html{
     opacity: 0;
 }
 
-.singleteam .teamtext{
+.singleteam .teamtext {
     position: relative;
     z-index: 3;
     color: white;
@@ -87,21 +90,25 @@ body, html{
     transform: translateY(60px);
     transition: 0.5s;
 }
-.teamtext h2{
+
+.teamtext h2 {
     margin: 0;
     font-family: 'Shrikhand', cursive;
     letter-spacing: 3px;
 }
-.teamtext p{
+
+.teamtext p {
     letter-spacing: 1px;
     font-size: 15px;
     margin-top: 8px;
     font-family: 'Poppins', sans-serif;
 }
 
-.teamtext a{
+.teamtext a {
     width: 30px;
     height: 30px;
+    line-height: 30px;
+    text-align: center;
     display: inline-block;
     border: 1px solid white;
     border-radius: 50%;
@@ -109,16 +116,7 @@ body, html{
     text-decoration: none;
 }
 
-.teamtext a i{
+.teamtext a i {
     color: white;
     padding: 6px 8px;
 }
-
-
-
-
-
-
-
-
-
