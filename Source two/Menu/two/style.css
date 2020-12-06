@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+/* Header and Menu */
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 20px 15px;
+}
+
+header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+header a.navbarbrand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+header .navlist-right {
+    float: right;
+}
+
+header .navlist-right a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#banner {
+    background: transparent url(banner.png) no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#banner .container .left {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+#banner .container .right {
+    width: 50%;
+    float: right;
+    padding: 5px;
+}
+
+#banner .left h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+    text-shadow: 1px 2px #000;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    line-height: 50px;
+}
+
+#banner .left p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+#banner .left a,
+#banner button {
+    background-color: #e91e63;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.8 ease;
+}
+
+#banner .left a:hover,
+#banner button:hover {
+    cursor: pointer;
+    transition: 0.8 ease;
+}
+
+/* Form Input */
+
+.form-group:first-child {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: white;
+    background-clip: padding-box;
+    resize: vertical;
+    transition: border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+textarea {
+    height: 200px;
+}
