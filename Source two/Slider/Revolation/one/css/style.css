@@ -1,0 +1,132 @@
+/* css style sheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.bannercontainer{
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.banner{
+	width:100%;
+	position:relative;
+}
+
+
+
+/*.box1{
+    animation: firstbox 0s 4s forwards;
+    visibility: hidden;
+}
+
+.box2{
+    animation: secondbox 0s 11.1s forwards;
+    visibility: hidden;
+}
+
+.box3{
+    animation: thirdbox 0s 17.4s forwards;
+    visibility: hidden;
+}
+
+@keyframes firstbox {
+  to   { visibility: visible; }
+}
+
+@keyframes secondbox {
+  to   { visibility: visible; }
+}
+
+@keyframes thirdbox {
+  to   { visibility: visible; }
+}*/
+
+.slider_contentbox{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 460px;
+    white-space: normal;
+    background: rgba(38, 38, 40, 0.7);
+    padding-bottom: 47px;
+/*    will-change: transform, opacity;
+    transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;*/
+}
+
+/*.slider_contentbox{
+    opacity: 1;
+    transform: translateX(0);
+}*/
+
+
+.slider_contentbox h2{
+    border-bottom: 1px solid #f4bc16;
+    padding: 20px 30px 20px;
+    background: rgba(38, 38, 40, 0.68);
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.slider_contentbox h2 a{
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s ease 0s;
+    opacity: 1;
+}
+
+.slider_contentbox p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+    padding: 23px 30px 40px;
+}
+
+.slider_contentbox a.btn{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid #e2e6e7;
+    border-radius: 1000px;
+    text-decoration: none;
+    padding: 17px 24px 16px;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
