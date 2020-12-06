@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+:root {
+    --one: #2196f3;
+    --two: #1976d2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    background-color: whitesmoke;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 430px;
+    background-color: var(--one);
+    border-radius: 5px;
+    position: relative;
+    color: white;
+    box-shadow: 5px 5px 5px #999;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .text {
+    padding: 60px 25px 25px 25px;
+}
+
+.card .text h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn_area {
+    padding: 15px;
+    background-color: var(--two);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn_area .cardbtn,
+.btn_area .social {
+    display: inline-block;
+}
+
+.btn_area .cardbtn {
+    padding: 10px 15px;
+    background-color: var(--one);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn_area .social {
+    position: absolute;
+    right: 15px;
+}
+
+.btn_area .social .fab {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--one);
+    border-radius: 3px;
+}
