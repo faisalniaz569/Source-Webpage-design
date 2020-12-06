@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SLIDER REVOLUTION</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+    
+<div class="tp-banner-container">
+    <div class="tp-banner">
+        <ul>
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                <img src="img/s1_bg.jpg"  alt="s1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+            </li>
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                <img src="img/s2_bg.jpg" alt="s2" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+            </li>
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                <img src="img/s3_bg.jpg" alt="s3" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+            </li>
+        </ul>
+    </div>
+</div>    
+    
+    <!-- get jQuery from the google apis -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <script src="jquery.themepunch.plugins.min.js"></script>
+    <script src="jquery.themepunch.revolution.min.js"></script>   
+    <script type="text/javascript">
+    
+        jQuery(document).ready(function(){
+            var revapi;
+            revapi = jQuery('.tp-banner').revolution({
+                delay: 9000,
+                fullWidth:"on",
+				forceFullWidth:"on"
+            });
+            
+        });
+    
+    </script>
+</body>
+</html>
