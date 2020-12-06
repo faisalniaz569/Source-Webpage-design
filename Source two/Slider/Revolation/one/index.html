@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revolation Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+<body>
+
+    <div class="bannercontainer">
+        <div class="banner">
+            <ul>
+                <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
+                    <img src="img/image_01.jpg" />
+                    
+                    <div class="slider_contentbox animate__animated animate__fadeInRight" style="animation-delay: 1s; transition: 
+    opacity 0.5s 1s;">
+                        <h2>
+                            <a href="#">Home Improvements and Remodeling</a>
+                        </h2>
+                        <p>"With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation, remodeling or driveway sett."</p>
+                        <a href="#" class="btn">Buy this template</a>
+                    </div>
+                </li>
+                <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
+                    <img src="img/image_02.jpg" />
+                    
+                    <div class="slider_contentbox box2 animate__animated animate__fadeInRight" style="animation-delay: 12s; ">
+                        <h2>
+                            <a href="#">Professional tiling and Painting Services</a>
+                        </h2>
+                        <p>"We combine quality workmanship, superior knowledge and low prices to provide you with service unmatched by our competitors."</p>
+                        <a href="#" class="btn">Buy this template</a>
+                    </div>
+                </li>
+                <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
+                    <img src="img/image_03.jpg">
+                    
+                    <div class="slider_contentbox box3 animate__animated animate__fadeInRight" style="animation-delay: 23s; ">
+                        <h2>
+                            <a href="#">Your most affordable contractors </a>
+                        </h2>
+                        <p>"We have the experience, personel and resources to make the project run smoothly. We can ensure a job is done on time."</p>
+                        <a href="#" class="btn">Buy this template</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('.banner').revolution({    
+                delay: 9000
+            });
+        });
+        
+    </script>
+    
+</body>
+
+</html>
