@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card two</title>
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="habib.jpg" alt="pp" />
+
+        <div class="text">
+            <h1>habib pro Youtube</h1>
+            <p>On the other hand, we denounce with righteous indignation and dislike men
+                who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded
+                by desire.</p>
+        </div>
+        <div class="btn_area">
+            <a href="#" class="cardbtn">Contact me</a>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jqyery.slim.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.btn_area .social').hide();
+
+            $('.btn_area .cardbtn').click(function() {
+                $('.btn_area .social').toggle();
+            })
+
+        });
+
+    </script>
+</body>
+
+</html>
