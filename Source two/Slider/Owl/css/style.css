@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.wrapper{
+    /*width: 1000px;*/
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.owl-carousel .owl-item img{
+    margin: 0 auto;
+    height: 600px !important;
+}
