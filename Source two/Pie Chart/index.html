@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pie Chart</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <style>
+    
+        .b-skills{
+            text-align: center;
+            padding: 45px;
+            border-top: 1px solid #f9f9f9;
+        }
+        
+        .b-skills:last-child{ margin-bottom: -30px; }
+        
+        .b-skills h2{ margin-bottom: 50px; font-weight: 900; text-transform: uppercase; }
+        
+        .skill_item{
+            position: relative;
+            max-width: 250px;
+            width: 100%;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .chart-container{
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 70%;
+        }
+        
+        .skill_item .chart, .skill_item .chart canvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        
+        .skill_item .chart:before{
+            content: "";
+            width: 0;
+            height: 100%;
+        }
+        
+        .skill_item .chart:before,
+        .skill_item .percent{
+            
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .skill_item .percent{
+            position: relative;
+            line-height: 1;
+            font-size: 40px;
+            font-weight: 900;
+            z-index: 2;
+        }
+        
+        .skill_item .percent:after{
+            content: attr(data-after);
+            font-size: 20px;
+        }
+        
+        .skill_item .chart:after{
+            content: '';
+            font-size: 20px;
+        }
+        p{ font-weight: 900; }
+        
+        
+    </style>
+</head>
+<body>
+    
+<div class="b-skills">
+    <div class="container">
+        <h2>Our Skills</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="skill_item center-block">
+                    <div class="chart-container">
+                        <div class="chart" data-percent="92" data-bar-color="deepskyblue">
+                            <span class="percent" data-after="%">92</span>
+                        </div>
+                    </div>
+                    <p>HTML</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="skill_item center-block">
+                    <div class="chart-container">
+                        <div class="chart" data-percent="78" data-bar-color="#56ab2f">
+                            <span class="percent" data-after="%">78</span>
+                        </div>
+                    </div>
+                    <p>CSS3</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="skill_item center-block">
+                    <div class="chart-container">
+                        <div class="chart" data-percent="60" data-bar-color="#fd746c">
+                            <span class="percent" data-after="%">60</span>
+                        </div>
+                    </div>
+                    <p>jQuery</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="skill_item center-block">
+                    <div class="chart-container">
+                        <div class="chart" data-percent="75" data-bar-color="#ffb400">
+                            <span class="percent" data-after="%">75</span>
+                        </div>
+                    </div>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
+    <script src="jquery.easypiechart.min.js"></script>
+    
+    <script>
+    $(function() {
+        $('.chart').easyPieChart({
+            //your options goes here
+            
+            barColor: function (percent) {
+            /*barColor = '#767676'; */// this is default barColor
+            if($(this.el).data('barcolor')) {
+                barColor = '#' + $(this.el).data('barcolor')
+            }
+            return barColor;
+            },
+            lineCap:'circle'
+        });
+    });
+</script>
+
+</body>
+</html>
