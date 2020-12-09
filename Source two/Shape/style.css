@@ -1,0 +1,149 @@
+body{
+    width: 1280px;
+    margin: 25px auto;
+    padding: 0;
+}
+
+div#shape {
+	width: 100%;
+}
+
+
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.column{
+    width: 20%;
+    float: left;
+    padding: 5px;
+	margin-bottom: 50px;
+}
+
+div{
+    margin: auto;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.sqshape{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.circleshape{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.oval{
+    width: 200px;
+    height: 100px;
+    border-radius: 100px / 50px;
+    background-color: deeppink;
+}
+
+.uptriangle{
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid blue;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.parallelogram{
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+    transform: skew(20deg);
+}
+
+.diamond{
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    margin-left: 50%;
+}
+
+.ractangle {
+	height: 50px;
+	width: 100px;
+	background-color: #555;
+}
+
+.downtriangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+
+.lefttriangle{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+.righttriangle{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+.trapezoid{
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.leftchair{
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
+.rightchair{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
