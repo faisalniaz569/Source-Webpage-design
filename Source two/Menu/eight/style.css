@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+#threedflip {
+    width: 100%;
+}
+
+#threedflip ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #a3b9b9;
+}
+
+#threedflip ul li {
+    float: left;
+}
+
+#threedflip ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    position: relative;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-top: 4px solid #0076d4;
+}
+
+/*#threedflip ul li a:hover {
+    background-color: #111;
+}*/
+
+#threedflip ul li a span {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: block;
+    text-transform: uppercase;
+    color: #262626;
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+#threedflip ul li a span:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb3b;
+    color: #262626;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.8s;
+}
+
+#threedflip ul li a:hover span:before {
+    transform: rotateX(0deg);
+}
+
+#threedflip ul li a span:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3;
+    color: #fff;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.8s;
+}
+
+#threedflip ul li a:hover span:after {
+    transition-delay: 0.5s;
+    transform: rotateX(0deg);
+}
