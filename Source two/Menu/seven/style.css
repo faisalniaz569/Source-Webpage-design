@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+#flip{
+    width: 100%;
+}
+
+#flip ul{
+    margin: 0;
+    list-style-type: none;
+    background-color: white;
+}
+
+#flip ul li{
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+#flip ul li a{
+    color: #262626;
+    font-size: 16px;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+#flip ul li a span{
+    display: block;
+    padding: 15px 20px;
+}
+
+#flip ul li a span:before{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f30000;
+    color: white;
+    padding: 15px 20px;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+    transform: rotateX(90deg) translateY(50px);
+    transform-origin: bottom;
+}
+
+#flip ul li a span:hover:before{
+    transform: rotateX(0deg) translateY(0px);
+}
+
+#flip ul li a span:after{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: #262626;
+    padding: 15px 20px;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+    transform: rotateX(0deg) translateY(0px);
+    transform-origin: top;
+}
+
+#flip ul li a span:hover:after{
+    transform: rotateX(90deg) translateY(-10px);
+}
+
+
+
+
+
+
