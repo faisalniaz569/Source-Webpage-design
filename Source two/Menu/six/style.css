@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main menu {
+    width: 100%;
+}
+
+#mainmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232331;
+}
+
+#mainmenu li {
+    float: left;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#mainmenu li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .1em;
+    border-right: 1px solid #6b6b6b;
+    transition: all 0.3s linear;
+    transition-delay: 0.1s;
+    transform: skew(20deg);
+}
+
+#mainmenu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s linear;
+    transition-delay: 0.1s;
+}
+
+#mainmenu ul li a div {
+    transform: skew(-20deg);
+}
