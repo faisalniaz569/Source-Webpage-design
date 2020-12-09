@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+label {
+    max-width: 100%;
+}
+
+/* The container */
+.container,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 50%;
+}
+
+/* Hide the browser's default checkbox */
+.container input,
+.container2 input,
+.container3 input,
+.container4 input,
+.container5 input,
+.container6 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark,
+.checkmark2,
+.checkmark3,
+.checkmark4,
+.checkmark5,
+.checkmark6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+}
+
+.checkmark {
+    background-color: #f0ad4e;
+    border: 2px solid #eea236;
+}
+
+.checkmark2 {
+    background-color: #eee;
+    border: 2px solid #cfcfcf;
+}
+
+.checkmark3 {
+    background-color: #449d44;
+    border: 2px solid #398439;
+}
+
+.checkmark4 {
+    background-color: #5bc0de;
+    border: 2px solid #46b8da;
+}
+
+.checkmark5 {
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+
+.checkmark6 {
+    background-color: #d9534f;
+    border: 2px solid #d43f3a;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #c37507;
+}
+
+.container2:hover input ~ .checkmark2 {
+    background-color: #ccc;
+}
+
+.container3:hover input ~ .checkmark3 {
+    background-color: #218421;
+}
+
+.container4:hover input ~ .checkmark4 {
+    background-color: #0682a7;
+}
+
+.container5:hover input ~ .checkmark5 {
+    background-color: #ddd;
+}
+
+.container6:hover input ~ .checkmark6 {
+    background-color: #e8130d;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #a77a3a;
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgb(144, 82, 0);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgb(144, 82, 0);
+    box-shadow: inset 2px 2px 4px 0px rgb(144, 82, 0);
+}
+
+.container2 input:checked ~ .checkmark2 {
+    background-color: #b5b5b5;
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgb(130, 130, 130);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgb(130, 130, 130);
+    box-shadow: inset 2px 2px 4px 0px rgb(130, 130, 130);
+}
+
+.container3 input:checked ~ .checkmark3 {
+    background-color: #049804;
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgb(49, 78, 53);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgb(49, 78, 53);
+    box-shadow: inset 2px 2px 4px 0px rgb(49, 78, 53);
+}
+
+.container4 input:checked ~ .checkmark4 {
+    background-color: #2a9fc1;
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgb(16, 56, 68);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgb(16, 56, 68);
+    box-shadow: inset 2px 2px 4px 0px rgb(16, 56, 68);
+}
+
+.container5 input:checked ~ .checkmark5 {
+    background-color: #a79d9d;
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgb(90, 90, 90);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgb(90, 90, 90);
+    box-shadow: inset 2px 2px 4px 0px rgb(90, 90, 90);
+}
+
+.container6 input:checked ~ .checkmark6 {
+    background-color: #de3732;
+    -webkit-box-shadow: inset 2px 2px 4px 0px rgb(123, 12, 7);
+    -moz-box-shadow: inset 2px 2px 4px 0px rgb(123, 12, 7);
+    box-shadow: inset 2px 2px 4px 0px rgb(123, 12, 7);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after,
+.checkmark2:after,
+.checkmark3:after,
+.checkmark4:after,
+.checkmark5:after,
+.checkmark6:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after,
+.container2 input:checked ~ .checkmark2:after,
+.container3 input:checked ~ .checkmark3:after,
+.container4 input:checked ~ .checkmark4:after,
+.container5 input:checked ~ .checkmark5:after,
+.container6 input:checked ~ .checkmark6:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after,
+.container2 .checkmark2:after,
+.container3 .checkmark3:after,
+.container4 .checkmark4:after,
+.container5 .checkmark5:after,
+.container6 .checkmark6:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#checkinline {
+    position: relative;
+    display: inline-block;
+}
