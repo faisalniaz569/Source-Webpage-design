@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bottom-right folded-corner paper </title>
+    <style>
+        .paper {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: dodgerblue;
+            position: relative;
+        }
+
+        .paper:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            border-width: 0;
+            border-style: solid;
+            border-color: #76a5d2 #fff transparent transparent;
+            border-width: 40px 40px 0 0;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 25px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="paper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit ad officia, esse non aperiam quia ipsum atque maiores minima cupiditate laudantium ex magnam voluptatem, accusantium, dignissimos omnis magni, velit?</p>
+    </div>
+
+
+
+</body>
+
+</html>
