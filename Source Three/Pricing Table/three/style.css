@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FullPrice {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#FullPrice .column {
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+
+.pricingtable01,
+.pricingtable02,
+.pricingtable03 {
+    display: block;
+    padding: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pricingtable01 {
+    background: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+}
+
+.pricingtable02 {
+    background: linear-gradient(135deg, #f761a1 10%, #8c1bab 100%);
+}
+
+.pricingtable03 {
+    background: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+}
+
+.pricingtable01:hover,
+.pricingtable02:hover,
+.pricingtable03:hover {
+    transform: scale(1.2);
+}
+
+.pricingtable01 .icon,
+.pricingtable02 .icon,
+.pricingtable03 .icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+    text-align: center;
+    font-size: 2.2em;
+    margin: 20px auto;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pricingtable01 .icon {
+    color: #fccf31;
+}
+
+.pricingtable02 .icon {
+    color: #f761a1;
+}
+
+.pricingtable03 .icon {
+    color: #43cbff;
+}
+
+.pricingtable01 .icon i,
+.pricingtable02 .icon i,
+.pricingtable03 .icon i {
+    transform: scale(1);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pricingtable01 > h3.heading,
+.pricingtable02 > h3.heading,
+.pricingtable03 > h3.heading {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+h1.serviceprice {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h1.serviceprice sup.dollar {
+    font-size: 0.6em;
+    margin-left: -10px;
+}
+
+.pricingtable01 ul.featurelist,
+.pricingtable02 ul.featurelist,
+.pricingtable03 ul.featurelist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricingtable01 ul.featurelist li,
+.pricingtable02 ul.featurelist li,
+.pricingtable03 ul.featurelist li {
+    color: white;
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.pricingtable01 button.orderbtn,
+.pricingtable02 button.orderbtn,
+.pricingtable03 button.orderbtn {
+    background-color: white;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+}
