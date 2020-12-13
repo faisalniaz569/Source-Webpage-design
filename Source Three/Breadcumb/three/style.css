@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div#breadcumb {
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .35);
+    overflow: hidden;
+    border-radius: 5px;
+    counter-reset: flag;
+    margin-left: 40px;
+}
+
+#breadcumb ul {
+    list-style-type: none;
+}
+
+#breadcumb ul li {
+    float: left;
+}
+
+#breadcumb ul li a {
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+    background: linear-gradient(#666, #333);
+    color: white;
+    padding-right: 10px;
+    padding-left: 60px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+#breadcumb ul li a:first-child {
+    padding-left: 60px;
+    border-radius: 5px 0 0 5px;
+}
+
+#breadcumb ul li a:first-child::before {
+    left: 25px;
+}
+
+#breadcumb ul li a:last-child {
+    border-radius: 0 5px 5px 0;
+    padding-right: 20px;
+}
+
+#breadcumb ul li a.active,
+#breadcumb ul li a:hover {
+    background: linear-gradient(#333, #000);
+    transition: all 0.5s;
+}
+
+#breadcumb ul li a.active::after,
+#breadcumb ul li a:hover::after {
+    background: linear-gradient(135deg, #333, #000);
+}
+
+#breadcumb ul li a::before {
+    content: counter(flag);
+    counter-increment: flag;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(#444, #222);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#breadcumb ul li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #666, #333);
+    transform: scale(0.707) rotate(45deg);
+    box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    border-radius: 0 5px 0 50px;
+    z-index: 1;
+}
+
+#breadcumb ul li:last-child a::after {
+    content: none;
+}
