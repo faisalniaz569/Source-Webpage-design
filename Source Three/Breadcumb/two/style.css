@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#breadcumb ul {
+    list-style-type: none;
+}
+
+#breadcumb ul li {
+    float: left;
+}
+
+#breadcumb ul li a {
+    display: block;
+    background-color: #ecf0f1;
+    text-align: center;
+    position: relative;
+    padding: 30px 30px 22px 60px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2c3e50;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#breadcumb ul li a::after {
+    content: '';
+    position: absolute;
+    border-top: 40px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid #ecf0f1;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+#breadcumb ul li a::before {
+    content: '';
+    position: absolute;
+    border-top: 40px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid #fff;
+    left: 0;
+    top: 0;
+}
+
+#breadcumb ul li:first-child a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#breadcumb ul li:first-child a::before {
+    display: none;
+}
+
+#breadcumb ul li:last-child a {
+    padding-right: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: red;
+    color: white;
+}
+
+#breadcumb ul li:last-child a::after {
+    display: none;
+}
+
+#breadcumb ul li a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+#breadcumb ul li a:hover::after {
+    border-left-color: #2c3e50;
+    color: white;
+}
