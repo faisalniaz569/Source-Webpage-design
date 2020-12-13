@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#breadcrumb ul {
+    padding: 10px 16px;
+    list-style-type: none;
+    background-color: #eee;
+}
+
+#breadcrumb ul li {
+    display: inline;
+    font-size: 18px;
+}
+
+#breadcrumb ul li + li::before {
+    content: "/\00a0";
+    padding: 8px;
+    color: black;
+}
+
+#breadcrumb ul li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+#breadcrumb ul li a:hover {
+    color: black;
+}
