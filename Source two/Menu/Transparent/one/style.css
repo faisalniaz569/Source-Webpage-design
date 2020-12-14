@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    font-size: 16px;
+}
+
+#BigHeader {
+    background: #fff url(mountain%201.jpeg) no-repeat 0 0;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav.tr {
+    width: 100%;
+}
+
+nav.tr ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2225;
+}
+
+nav.tr ul li {
+    float: left;
+}
+
+nav.tr ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav.tr ul li a:hover:not(.active) {
+    background-color: #1115;
+}
