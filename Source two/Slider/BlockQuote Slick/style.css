@@ -1,0 +1,60 @@
+/* css style sheet */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.row{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#textslider > .column{
+    width: 100%;
+    float: left;
+}
+
+#textslider{
+    overflow: hidden;
+    position: relative;
+    max-height: 300px;
+    background: dodgerblue;
+}
+
+.one-slide,
+.message {
+    border: none !important;
+    outline: none !important;
+}
+
+.testimonial img{
+    border-radius: 50%;
+    float: left;
+    padding: 20px;
+    padding-right: 60px;
+}
+
+.message{
+    padding-top: 30px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.blockquote-footer{
+    color: #eae064;
+    font-weight: bold;
+    margin-top: 10px;
+    float: right;
+}
+
+
+
+
+
