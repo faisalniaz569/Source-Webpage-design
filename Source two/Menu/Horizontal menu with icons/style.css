@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#menu ul {
+    list-style-type: none;
+    background-color: #555;
+    overflow: hidden;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+#menu ul li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+}
