@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BlockQuote Slider</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+    <link href="slick.min.css" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="slick.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="textslider">
+        <div class="row">
+            <div class="column">
+                <h2>Our Customers Are Seeing Big Results</h2>
+
+                <div class="carousel-controls testimonial-carousel-controls">
+                    <div class="testimonial-carousel">
+                        <div class="h5 font-weight-normal one-slide mx-auto">
+                            <div class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+
+                                <img src="review-author-4.jpg" alt="rev" />
+                                <div class="message text-center blockquote w-100">
+
+                                    <i class="fa fa-quote-left" aria-hidden="true" style="font-size: 20px;"></i> They’ve been consistent throughout the years and grown together with us. Even as they’ve grown, they haven’t lost sight of what they do. Most of their key resources are still with them, which is also a testament to their organization.<i class="fa fa-quote-right" aria-hidden="true" style="font-size: 20px;"></i>
+                                </div>
+                                <div class="blockquote-footer w-100 text-white">- Ted, WebCorpCo</div>
+                            </div>
+                        </div>
+                        <div class="h5 font-weight-normal one-slide mx-auto">
+                            <div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+
+                                <img src="review-author-5.jpg" alt="rev" />
+                                <div class="message text-center blockquote w-100">
+                                    <i class="fa fa-quote-left" aria-hidden="true" style="font-size: 20px;"></i>Our website uses Solodev to craft a website capable of representing its diverse residents. The website features a newsroom with the latest events, an interactive calendar, and a mobile app that puts the resources at a user’s fingertips.<i class="fa fa-quote-right" aria-hidden="true" style="font-size: 20px;"></i>
+                                </div>
+                                <div class="blockquote-footer w-100 text-white">- Cirsten Duns, WebCorpCo</div>
+                            </div>
+                        </div>
+                        <div class="h5 font-weight-normal one-slide mx-auto">
+                            <div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+
+                                <img src="review-author-6.jpg" alt="rev" />
+                                <div class="message text-center blockquote w-100">
+                                    <i class="fa fa-quote-left" aria-hidden="true" style="font-size: 20px;"></i>Solodev is a great company to partner with! We are extremely happy with the software, service, and support.<i class="fa fa-quote-right" aria-hidden="true" style="font-size: 20px;"></i>
+                                </div>
+                                <div class="blockquote-footer w-100 text-white">- Jim Joe, WebCorpCo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".testimonial-carousel").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                arrows: true,
+                prevArrow: $(".testimonial-carousel-controls .prev"),
+                nextArrow: $(".testimonial-carousel-controls .next")
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
