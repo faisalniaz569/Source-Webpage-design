@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    position: relative;
+    float: left;
+    margin: 0 2px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(2px);
+    transform: scale(0.8);
+}
+
+ul li:hover::before {
+    transition-delay: 0.5s;
+    opacity: 0.2;
+    transform: scale(1);
+}
+
+ul li a {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    display: block;
+    transition: 0.5s;
+    background: #ccc;
+    position: relative;
+}
+
+ul li:hover a {
+    transform: translateY(-10px);
+}
+
+ul li a span {
+    width: 100%;
+    height: 100%;
+}
+
+ul li a span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #262626;
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+ul li a span::before,
+ul li a span::after {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+
+ul li a:hover span::before {
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+ul li a span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 100px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transform: rotateX(90deg) translateY(50%);
+}
+
+ul li a span::before {
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #262626;
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+ul li:hover a span::before {
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+ul li a span::after {
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: white;
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transform: rotateX(90deg) translateY(50%);
+}
+
+ul li:hover a span::after {
+    transform: rotateX(0deg) translateY(0%);
+}
+
+ul li:nth-child(1) a span::before,
+ul li:nth-child(1) a span::after {
+    content: '\f39e';
+}
+
+ul li:nth-child(2) a span::before,
+ul li:nth-child(2) a span::after {
+    content: '\f099';
+}
+
+ul li:nth-child(3) a span::before,
+ul li:nth-child(3) a span::after {
+    content: '\f0d5';
+}
+
+ul li:nth-child(4) a span::before,
+ul li:nth-child(4) a span::after {
+    content: '\f0e1';
+}
+
+ul li:nth-child(5) a span::before,
+ul li:nth-child(5) a span::after {
+    content: '\f16d';
+}
+
+ul li:nth-child(1) a span::after {
+    background-color: #3B5998;
+}
+
+ul li:nth-child(2) a span::after {
+    background-color: #55ACEE;
+}
+
+ul li:nth-child(3) a span::after {
+    background-color: #DD4B39;
+}
+
+ul li:nth-child(4) a span::after {
+    background-color: #007BB5;
+}
+
+ul li:nth-child(5) a span::after {
+    background-color: #125688;
+}
