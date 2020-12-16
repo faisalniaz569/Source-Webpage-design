@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#contact {
+    width: 100%;
+}
+
+.contactbg {
+    width: 1140px;
+    margin: 50px auto;
+    padding-left: 15px;
+    padding-right: 0;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 5px #f1f1f1;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#contact .column {
+    width: 50%;
+    float: left;
+}
+
+#contact .column:last-child {
+    background-color: #4ac598;
+}
+
+.text_info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.inputinfo.inputbg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inputinfo button {
+    width: 100%;
+    background-color: #3f4482;
+    border: 2px solid #191f69;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.inputbg {
+    position: relative;
+    padding: 25px;
+    z-index: 1;
+}
+
+.inputbg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.text_info h3 {
+    color: #222;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info i {
+    width: 10%;
+    float: left;
+    padding: 20px 20px 12px 0px;
+    font-size: 24px;
+    text-align: center;
+    color: #4ac598;
+}
+
+.info p {
+    width: 90%;
+    float: right;
+    color: #555;
+    padding: 20px 0px;
+}
