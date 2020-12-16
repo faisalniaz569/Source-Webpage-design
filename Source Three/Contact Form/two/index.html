@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="icons/css/all.min.css" />
+</head>
+
+<body>
+
+    <div id="contact">
+        <div class="contactbg">
+            <div class="row">
+                <div class="column">
+                    <div class="text_info">
+                        <h3>Get in touch</h3>
+                        <p>Text information to Stay Connected</p>
+                        <div class="info">
+                            <i class="fas fa-phone"></i>
+                            <p>+880 123 456 789</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@gmail.com</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Farmgate, Dhaka-1215</p>
+                        </div>
+
+                        <div class="info">
+                            <img src="map.jpg" alt="map" style="width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inputinfo inputbg">
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                            <button type="button">
+                                <i class="fas fa-rocket"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
