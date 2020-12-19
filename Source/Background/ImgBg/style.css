@@ -1,0 +1,52 @@
+/* css style sheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+h1 {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+#example1 {
+    background-image: url(img/img_flwr.gif), url(img/paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 30px 0 70px 0;
+    line-height: 1.5;
+}
+
+#example1 p,
+#example2 p {
+    margin-bottom: 0;
+}
+
+#example2 {
+    background-image: url(img/img_tree.gif), url(img/img_flwr.gif), url(img/paper.gif);
+    background-position: left top, right bottom, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    padding: 30px 15px 30px 100px;
+    background-size: 75px, 130px, auto;
+    background-origin: content-box;
+    line-height: 1.5;
+}
