@@ -1,0 +1,80 @@
+/* css style sheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box .Imgbox img {
+    float: left;
+    margin: 30px;
+}
+
+.box .authortext {
+    margin: 50px;
+}
+
+.box .authortext a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.box .authortext .author {
+    color: #27c7cd;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/*.box {
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.box .Imgbox {
+    width: 150px;
+    flex: 0 0 150px;
+}
+
+.box .Imgbox img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.box .authortext {
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 25px;
+}*/
