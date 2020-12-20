@@ -1,4 +1,4 @@
-/* css style sheet */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +7,10 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: lightblue;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -19,62 +21,66 @@ body {
     height: 100vh;
 }
 
-.box {
-    width: 400px;
-    height: 200px;
+.main {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.main .layer1 {
+    width: 100%;
+    height: 100%;
+    background-color: #4ef75c;
+    transform: skewX(-30deg);
+    box-shadow: 0 0 0 15px white;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.main .layer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    z-index: -1;
+}
+
+.main:hover .layer2 {
+    transform: scaleX(1.5) scaleY(0.8);
+}
+
+.content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
     background-color: white;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.box .Imgbox img {
-    float: left;
-    margin: 30px;
-}
-
-.box .authortext {
-    margin: 50px;
-}
-
-.box .authortext a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.box .authortext .author {
-    color: #27c7cd;
-    font-size: 16px;
-    margin-top: 5px;
-}
-
-/*.box {
-    width: 600px;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 50px;
     box-sizing: border-box;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    display: flex;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
-.box .Imgbox {
-    width: 150px;
-    flex: 0 0 150px;
+.content h1 {
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    font-weight: 700;
 }
 
-.box .Imgbox img {
-    max-width: 100%;
-    margin: auto;
-    display: block;
+.content p {
+    font-weight: 400;
 }
 
-.box .authortext {
-    padding-top: 15px;
-}
-
-a {
+.content a {
+    display: inline-block;
     text-decoration: none;
-    font-size: 17px;
-    line-height: 25px;
-}*/
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+}
