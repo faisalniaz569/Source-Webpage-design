@@ -29,7 +29,7 @@ div#shape {
 }
 
 .column {
-    width: 24%;
+    width: 25%;
     float: left;
     padding: 5px;
 }
@@ -148,6 +148,7 @@ div#shape {
     border-bottom: 50px solid #555;
     margin: auto;
 }
+
 
 
 
