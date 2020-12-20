@@ -42,14 +42,16 @@ div#landingpage .column {
 
 .hack img {
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
+    height: auto;
+    display: block;
 }
 
 .hack p {
     font-size: 18px;
     line-height: 1.5;
-    margin-top: 0px;
+    margin: 15px 0 30px 20px;
     text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: table;
 }
+
