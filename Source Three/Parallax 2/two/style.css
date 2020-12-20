@@ -1,0 +1,78 @@
+/* css style sheet */
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.parallaxbg{
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    color: white;
+}
+
+.parallaxbg:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+.btn{
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: 3px solid white;
+    display: inline-block;
+}
+
+.p250{
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.p100{
+    padding-top: 100px;    
+    padding-bottom: 100px;
+}
+
+.parallaxbg h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.parallaxbg p{ font-size: 20px; }
+
+.whitebg{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.whitebg .btn{
+    padding: 10px 25px;
+    border: 2px solid #222;
+    display: table;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
