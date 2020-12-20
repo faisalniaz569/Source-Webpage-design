@@ -1,0 +1,91 @@
+/* css style sheet */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    background-repeat: no-repeat;
+    height: 100%;
+            
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+	z-index: 9;
+}
+
+section::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7); 
+	z-index: -1;
+}
+
+
+section div h1{
+	font-size: 100px;
+	max-width: 1000px;
+color: #ffee88;
+}
+
+section div p{
+	font-size: 24px;
+	max-width: 1000px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn{
+	display: inline-block;
+	padding: 15px 35px;
+	background-color: white;
+	color: #222;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: .4s linear;
+	border-radius: 50px;
+}
+
+.btn:hover{
+	background-color: #222;
+	color: white;
+}
+
+
+
+
+
+
+
+
