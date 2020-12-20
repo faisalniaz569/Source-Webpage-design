@@ -1,135 +1,154 @@
-body{
-    width: 1280px;
-    margin: 25px auto;
+* {
+    margin: 0;
     padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 div#shape {
-	width: 100%;
+    width: 100%;
+    margin: 30px 0;
 }
 
-
-.row::after{
+.row::after {
     content: '';
     clear: both;
     display: table;
 }
 
-.column{
-    width: 20%;
+.column {
+    width: 24%;
     float: left;
     padding: 5px;
-	margin-bottom: 50px;
 }
 
-div{
-    margin: auto;
-}
-
-.square{
-    width: 200px;
+.square {
+    width: 100%;
     height: 200px;
     background-color: red;
 }
 
-.sqshape{
-    width: 200px;
+.sqshape {
+    width: 100%;
     height: 200px;
     background-color: red;
     border-radius: 20px;
 }
 
-.circleshape{
-    width: 200px;
+.circleshape {
+    width: 100%;
     height: 200px;
     background-color: blue;
     border-radius: 50%;
 }
 
-.oval{
+.oval {
     width: 200px;
     height: 100px;
     border-radius: 100px / 50px;
     background-color: deeppink;
 }
 
-.uptriangle{
+.uptriangle {
     width: 0;
     height: 0;
     border-bottom: 120px solid blue;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
+    margin: auto;
 }
 
-.parallelogram{
+.parallelogram {
     width: 200px;
     height: 100px;
     background-color: chartreuse;
     transform: skew(20deg);
+    margin: auto;
 }
 
-.diamond{
+.diamond {
     width: 120px;
     height: 120px;
     background-color: coral;
     transform: rotate(-45deg);
-    transform-origin: 0 100%;
-    margin-left: 50%;
+    /*transform-origin: 0 100%;
+    margin-left: 50%;*/
+    margin: auto;
 }
 
 .ractangle {
-	height: 50px;
-	width: 100px;
-	background-color: #555;
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+    margin: auto;
 }
 
 .downtriangle {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #555;
+    margin: auto;
 }
 
-.lefttriangle{
-	width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-right: 50px solid #555;
-	border-bottom: 25px solid transparent;
+.lefttriangle {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #555;
+    border-bottom: 25px solid transparent;
+    margin: auto;
 }
 
-.righttriangle{
-	width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-left: 50px solid #555;
-	border-bottom: 25px solid transparent;
+.righttriangle {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid #555;
+    border-bottom: 25px solid transparent;
+    margin: auto;
 }
 
-.trapezoid{
-	border-bottom: 50px solid #555;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0;
-	width: 125px;
+.trapezoid {
+    border-bottom: 50px solid #555;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+    margin: auto;
 }
 
-.leftchair{
-	width: 0;
-	height: 0;
-	border-left: 0px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
+.leftchair {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #555;
+    margin: auto;
 }
 
-.rightchair{
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 0px solid transparent;
-	border-bottom: 50px solid #555;
+.rightchair {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 50px solid #555;
+    margin: auto;
 }
+
 
 
 
