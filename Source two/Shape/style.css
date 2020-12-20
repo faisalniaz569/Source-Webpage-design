@@ -83,8 +83,6 @@ div#shape {
     height: 120px;
     background-color: coral;
     transform: rotate(-45deg);
-    /*transform-origin: 0 100%;
-    margin-left: 50%;*/
     margin: auto;
 }
 
@@ -135,7 +133,7 @@ div#shape {
     width: 0;
     height: 0;
     border-left: 0px solid transparent;
-    border-right: 25px solid transparent;
+    border-right: 50px solid transparent;
     border-bottom: 50px solid #555;
     margin: auto;
 }
@@ -143,9 +141,27 @@ div#shape {
 .rightchair {
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
+    border-left: 50px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 50px solid #555;
+    margin: auto;
+}
+
+.bottomleftchair {
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-right: 50px solid #555;
+    border-bottom: 50px solid transparent;
+    margin: auto;
+}
+
+.bottomrightchair {
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 50px solid #555;
+    border-bottom: 50px solid transparent;
     margin: auto;
 }
 
