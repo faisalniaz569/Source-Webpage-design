@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.bg {
+    background-image: url("building.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.widget {
+    width: 400px;
+    height: 230px;
+    border-radius: 20px;
+    background: rgba(299, 299, 299, 0.4);
+    padding: 20px 0px;
+}
+
+.widget .left {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+}
+
+.widget .right {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    color: white;
+    margin: 50px 0;
+}
+
+.img {
+    width: 75%;
+    margin-bottom: -30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weather-status {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+.widget .right .city {
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 5px #707070;
+}
+
+.widget .right .degree {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 5px #707070;
+}
+
+.widget .bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.widget .bottom div {
+    width: 100%;
+    margin: 5px 10px;
+    text-align: center;
+    line-height: 100%;
+    font-size: 0.83em;
+    text-shadow: 1px 1px 5px #707070;
+}
+
+.widget .bottom div span {
+    display: block;
+    line-height: normal;
+}
