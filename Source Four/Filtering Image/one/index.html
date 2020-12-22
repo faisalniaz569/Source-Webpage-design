@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filtering Images</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h1>MYLOGO.COM</h1>
+        <hr>
+
+        <h2>PORTFOLIO</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('recipie')"> Recipie</button>
+            <button class="btn" onclick="filterSelection('place')"> Place</button>
+            <button class="btn" onclick="filterSelection('Speacila')"> Speacila</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column place">
+                <div class="content">
+                    <img src="img/1.jpg" alt="One" style="width:100%">
+                    <h3>Sea Beach</h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <div class="column recipie">
+                <div class="content">
+                    <img src="img/2.jpg" alt="Two" style="width:100%">
+                    <h3>Food and Salad</h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <div class="column Speacila">
+                <div class="content">
+                    <img src="img/3.jpg" alt="Three" style="width:100%">
+                    <h3>The Corridor</h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+
+            <div class="column recipie">
+                <div class="content">
+                    <img src="img/4.jpg" alt="four" style="width:100%">
+                    <h3>The Party </h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <div class="column place">
+                <div class="content">
+                    <img src="img/5.jpg" alt="five" style="width:100%">
+                    <h3>The Sea </h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <div class="column Speacila">
+                <div class="content">
+                    <img src="img/6.jpg" alt="Six" style="width:100%">
+                    <h3>The Station</h3>
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script src="own.js"></script>
+
+</body>
+
+</html>
