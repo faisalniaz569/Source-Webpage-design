@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smooth Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#section1 {
+            height: 600px;
+            background-color: pink;
+            position: relative;
+            padding: 50px;
+        }
+
+        div#section1>h1 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        div#section1>p, div#section2>p {
+            width: 1000px;
+            margin: auto;
+            font-size: 1.2em;
+            opacity: 0.5;
+            line-height: 1.5;
+        }
+
+        div#section2 {
+            height: 600px;
+            background-color: yellow;
+            padding: 50px;
+        }
+
+        .scrolldown {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            transform: translateY(-80px) translateX(-50%) rotate(45deg);
+        }
+
+        .scrolldown span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid blueviolet;
+            border-right: 2px solid blueviolet;
+            animation: scrolldown 1.5s linear infinite;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .scrolldown span:nth-child(1) {
+            transform: translate(-15px, -15px);
+            animation-delay: -0.4s;
+        }
+
+        .scrolldown span:nth-child(2) {
+            transform: translate(0, 0);
+            animation-delay: -0.2s;
+        }
+
+        .scrolldown span:nth-child(3) {
+            transform: translate(15px, 15px);
+            animation-delay: 0s;
+        }
+
+        @keyframes scrolldown {
+
+            0% {
+                top: -5px;
+                left: -5px;
+                opacity: 0;
+            }
+
+            25% {
+                top: 0px;
+                left: 0px;
+                opacity: 1;
+            }
+
+            50%,
+            100% {
+                top: 5px;
+                left: 5px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Smooth Scroll</h1>
+
+    <div class="main" id="section1">
+        <h1>Scroll Down Indicator</h1>
+        <h2 style="text-align: center;">Section 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur corrupti quam qui eligendi eos beatae, consequuntur quod labore vel inventore sunt soluta impedit, quidem recusandae eum vitae dolorem temporibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur corrupti quam qui eligendi eos beatae, consequuntur quod labore vel inventore sunt soluta impedit, quidem recusandae eum vitae dolorem temporibus.
+        </p>
+
+        <a href="#section2">
+            <div class="scrolldown">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="main" id="section2">
+        <h2 style="text-align: center;">Section 2</h2>
+        <a href="#section1" style="padding-left: 10%;">Click Me to Smooth Scroll to Section 1 Above</a>
+        <p style="margin-top: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur corrupti quam qui eligendi eos beatae, consequuntur quod labore vel inventore sunt soluta impedit, quidem recusandae eum vitae dolorem temporibus.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
