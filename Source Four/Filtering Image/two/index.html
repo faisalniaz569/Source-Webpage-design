@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filtering Images</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="icons/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h1>MYLOGO.COM</h1>
+        <hr>
+
+        <h2>PORTFOLIO</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn button2" onclick="filterSelection('beach')">Beach</button>
+            <button class="btn button3" onclick="filterSelection('castle')">Castle</button>
+            <button class="btn button4" onclick="filterSelection('desert')"> Desert</button>
+            <button class="btn button5" onclick="filterSelection('rain')"> Rain</button>
+            <button class="btn button6" onclick="filterSelection('snow')"> Snow</button>
+            <button class="btn button7" onclick="filterSelection('street')">Street</button>
+
+            <input type="text" id="myInput" placeholder="Search..." name="search" title="Type in a name" />
+            <button type="submit" class="search"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column beach">
+                <div class="content">
+                    <img src="img/beach.jpeg" alt="Beach" data-alt="Beach" class="images" title="This_is_image_1" />
+                    <h4>Beach</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column beach">
+                <div class="content">
+                    <img src="img/beach%202.jpeg" alt="Beach" data-alt="Beach" class="images" title="This_is_image_2" />
+                    <h4>Beach</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column castle">
+                <div class="content">
+                    <img src="img/castle.jpeg" alt="Castle" data-alt="Castle" class="images" title="This_is_image_3" />
+                    <h4>Castle</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <div class="column rain">
+                <div class="content">
+                    <img src="img/rain.jpeg" alt="Rain" data-alt="Rain" class="images" title="This_is_image_4" />
+                    <h4>Rain</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column castle">
+                <div class="content">
+                    <img src="img/castle%202.jpeg" alt="Castle" data-alt="Castle" class="images" title="This_is_image_5" />
+                    <h4>Castle</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column desert">
+                <div class="content">
+                    <img src="img/desert.jpeg" alt="desert" data-alt="Desert" class="images" title="This_is_image_6" />
+                    <h4>Desert</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column desert">
+                <div class="content">
+                    <img src="img/desert%202.jpeg" alt="Desert" data-alt="Desert" class="images" title="This_is_image_7" />
+                    <h4>Desert</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <div class="column rain">
+                <div class="content">
+                    <img src="img/rain%202.jpeg" alt="Rain" data-alt="Rain" class="images" title="This_is_image_8" />
+                    <h4>Rain</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column night">
+                <div class="content">
+                    <img src="img/night.jpeg" alt="Night" data-alt="Night" class="images" title="This_is_image_9" />
+                    <h4>Night</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column night">
+                <div class="content">
+                    <img src="img/night%202.jpeg" alt="Night" data-alt="Night" class="images" title="This_is_image_10" />
+                    <h4>Night</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column snow">
+                <div class="content">
+                    <img src="img/snow%202.jpeg" alt="Snow" data-alt="Snow" class="images" title="This_is_image_11" />
+                    <h4>Snow</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column street">
+                <div class="content">
+                    <img src="img/street%202.jpeg" alt="Street" data-alt="Street" class="images" title="This_is_image_12" />
+                    <h4>Street</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+
+
+    </div>
+    <!-- END MAIN -->
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
