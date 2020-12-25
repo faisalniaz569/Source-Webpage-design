@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D Weather card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+</head>
+
+<body>
+
+    <div id="card">
+        <div class="front active">
+            <div class="location">New Delhi</div>
+            <div class="more"><i class="fas fa-info-circle"></i></div>
+            <div class="weather">
+                <i class="fas fa-cloud"></i>
+                <h1>8<sup>o</sup>
+                    <p>Today</p>
+                </h1>
+            </div>
+            <ul class="forecast">
+                <li>
+                    <div class="day">Sunday</div>
+                    <div class="temprature"><i class="fas fa-cloud"></i> 9<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Monday</div>
+                    <div class="temprature"><i class="fas fa-tint"></i> 6<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Tuesday</div>
+                    <div class="temprature"><i class="far fa-snowflake"></i> 2<sup>o</sup></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="back">
+            <div class="goback active"><i class="fas fa-chevron-circle-left"></i></div>
+
+            <ul class="forecast">
+                <li>
+                    <div class="day">Yesterday</div>
+                    <div class="temprature"><i class="far fa-snowflake"></i> 3<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Today</div>
+                    <div class="temprature"><i class="fas fa-cloud"></i> 8<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Tomorrow</div>
+                    <div class="temprature"><i class="fas fa-tint"></i> 7<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Sunday</div>
+                    <div class="temprature"><i class="fas fa-cloud"></i> 9<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Monday</div>
+                    <div class="temprature"><i class="fas fa-tint"></i> 6<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Tuesday</div>
+                    <div class="temprature"><i class="far fa-snowflake"></i> 2<sup>o</sup></div>
+                </li>
+                <li>
+                    <div class="day">Wednesday</div>
+                    <div class="temprature"><i class="fas fa-tint"></i> 5<sup>o</sup></div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.more').click(function() {
+
+                $('.back').addClass('active');
+                $('.front').removeClass('active');
+
+            });
+
+            $('.goback').click(function() {
+
+                $('.back').removeClass('active');
+                $('.front').addClass('active');
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
