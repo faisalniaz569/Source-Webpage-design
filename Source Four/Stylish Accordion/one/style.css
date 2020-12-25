@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f938a;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#wrapper {
+    width: 500px;
+}
+
+.accordion {
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #111;
+    padding: 15px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.accordion:hover {
+    background-color: transparent;
+}
+
+.accordion::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f061';
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.accordion:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 47px;
+    background: transparent;
+    border-left: 18px solid #eee;
+    border-top: 47px solid transparent;
+    box-sizing: border-box;
+    width: 20px;
+    height: 47px;
+}
+
+.accactive::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f063';
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ca1f26;
+}
+
+.accactive:after {
+    background: transparent;
+    border-left: 18px solid #ca1f26;
+    border-top: 47px solid transparent;
+}
+
+.accactive,
+.accactive:hover {
+    background-color: #000;
+    color: white;
+}
+
+.panel {
+    padding: 0 18px;
+    margin-bottom: 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    padding: 20px 0;
+}
