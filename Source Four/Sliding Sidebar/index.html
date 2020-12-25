@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Sidebar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="sidebar_contact">
+        <div class="toggle"></div>
+        <h2>Contact Us</h2>
+        <form action="">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="phone" name="phone" placeholder="Telephone">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" name="submit" value="Send" />
+        </form>
+    </div>
+
+    <div class="banner"></div>
+    <div class="content">
+        <h2>What is Lorem Ipsum?</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate enim harum blanditiis ex dignissimos magnam magni, sunt itaque fugiat qui. Ea ut recusandae natus autem soluta neque eos ullam consectetur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur maiores odio error esse earum explicabo, quo deleniti blanditiis dolorum necessitatibus cumque ipsum repudiandae laborum molestias temporibus maxime corrupti vero!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus commodi minus molestiae ipsa, soluta recusandae voluptate repellendus necessitatibus debitis reiciendis, in enim, facilis mollitia ab nostrum odio eaque illo magnam.
+        </p>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".toggle").click(function() {
+
+                $(".sidebar_contact").toggleClass('active');
+                $(".toggle").toggleClass('active');
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
