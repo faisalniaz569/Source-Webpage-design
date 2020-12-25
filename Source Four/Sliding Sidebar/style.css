@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url(manone.jpeg) no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    padding: 50px 100px;
+}
+
+.content h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.sidebar_contact {
+    position: fixed;
+    top: 50%;
+    right: -350px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.sidebar_contact.active {
+    right: 0;
+}
+
+.sidebar_contact input,
+.sidebar_contact textarea {
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.sidebar_contact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.sidebar_contact input[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.sidebar_contact h2 {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: -48px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f00;
+}
+
+.toggle::before {
+    content: "\f085";
+}
+
+.toggle.active:before {
+    content: '\f00d';
+}
+
+.toggle:before,
+.toggle.active:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
