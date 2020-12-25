@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion jQuery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <button class="accordion"><span style="margin-left: 50px;">We Are Creative & Professional</span></button>
+        <div class="panel toggle">
+            <p>With over 60 years of providing world class service to their customers on the asset side, a need to provide a one stop shop for a” true customer service logistic solution” was introduced. By adding this dimension to an already dynamic and customer centric asset based provider, we feel we bring a total solution.</p>
+        </div>
+
+        <button class="accordion"><span style="margin-left: 50px;">Honest And Dependable</span></button>
+        <div class="panel toggle">
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+
+        <button class="accordion"><span style="margin-left: 50px;">Quality Commitment</span></button>
+        <div class="panel toggle">
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+
+        <button class="accordion"><span style="margin-left: 50px;">We Are Always Improving</span></button>
+        <div class="panel toggle">
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("accactive");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
