@@ -1,0 +1,103 @@
+/* css stylesheet */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+.flip_box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    /*margin: 100px auto;*/
+    display: block;
+}
+
+.flip_box_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_box_front img,
+.flip_box_back img {
+    width: 100%;
+    height: 375px;
+}
+
+.flip_box:hover .flip_box_inner {
+    transform: rotateY(-180deg);
+}
+
+.flip_box_back {
+    background-color: #f1f1f1;
+    height: 375px !important;
+    perspective: 1000px;
+    transform: rotateY(-180deg);
+}
+
+.flip_box_front,
+.flip_box_back {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip_box_back h2 {
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    margin-top: 50%;
+}
+
+.flip_box_back span {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 16px;
+}
+
+.sm {
+    margin: 20px 0;
+}
+
+.sm a {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.sm a:hover {
+    background-color: #2c3e50;
+    color: white;
+    transition: 0.5s;
+}
