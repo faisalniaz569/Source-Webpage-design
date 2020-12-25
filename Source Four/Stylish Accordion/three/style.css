@@ -1,0 +1,123 @@
+.accordion {
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #111;
+    padding: 13px;
+    margin-top: 10px;
+    text-align: left;
+    outline: none;
+    font-family: myFont;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.accordion:hover {
+    background-color: transparent;
+}
+
+.accordion:before {
+    content: '\f061';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.accordion:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 48px;
+    background: transparent;
+    border-left: 18px solid #eee;
+    border-top: 48px solid transparent;
+    box-sizing: border-box;
+    width: 20px;
+    height: 48px;
+}
+
+.accactive:before {
+    content: '\f063';
+    font-family: fontAwesome;
+    background-color: #ca1f26;
+}
+
+.accactive:after {
+    background: transparent;
+    border-left: 18px solid #ca1f26;
+    border-top: 47px solid transparent;
+}
+
+.accactive,
+.accactive:hover {
+    background-color: #000;
+    color: white;
+}
+
+.panel {
+    padding: 0 18px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    font-family: myFont2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+html,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    height: 100vh;
+}
+
+#wrapper {
+    max-width: 840px;
+    margin: 150px auto;
+}
+
+#accordion1 {
+    border: 1px solid #000;
+}
+
+.accordionContent {
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.accordionButton {
+    background-color: #1085c9;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+    border-bottom: 1px solid #222;
+}
+
+.controls {
+    margin: 50px auto;
+}
+
+/*.controls button {
+    padding: 1.25rem;
+    border: 0;
+    background-color: #E74C3C;
+    border-bottom: 2px solid #C0392B;
+    color: #fff;
+    font-size: 1.25rem;
+}*/
