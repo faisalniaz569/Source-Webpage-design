@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Check mark</title>
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+    <style>
+        ul,
+        #d>ul,
+        #r>ul,
+        #star>ul,
+        #startwo>ul,
+        #hand>ul,
+        #hand2>ul,
+        #square1>ul,
+        #square2>ul,
+        #square3>ul,
+        #square4>ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li,
+        #d>ul>li,
+        #r>ul>li,
+        #star>ul>li,
+        #startwo>ul>li,
+        #hand>ul>li,
+        #hand2>ul>li,
+        #square1>ul>li,
+        #square2>ul>li,
+        #square3>ul>li,
+        #square4>ul>li {
+            float: none;
+            margin-bottom: 20px;
+            padding-left: 16px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        ul li::before,
+        #d>ul>li:before,
+        #r>ul>li:before,
+        #star>ul>li:before,
+        #startwo>ul>li:before,
+        #hand>ul>li:before,
+        #hand2>ul>li:before,
+        #square1>ul>li:before,
+        #square2>ul>li:before,
+        #square3>ul>li:before,
+        #square4>ul>li:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            padding-right: 8px;
+            font-size: 20px;
+        }
+
+        /* first checkmark */
+        ul li::before {
+            content: "\f00c";
+        }
+
+        /* second checkmark */
+        #d>ul>li::before {
+            content: "\f00c";
+            color: dodgerblue;
+        }
+
+        /* third checkmark */
+        #r>ul>li:before {
+            content: "\f00c";
+            color: red;
+        }
+
+        /* star checkmark */
+        #star>ul>li:before {
+            content: '\f005';
+            color: red;
+            font-style: normal;
+        }
+
+        #startwo>ul>li:before {
+            content: '\f005';
+            color: darkorange;
+        }
+
+        #hand>ul>li:before {
+            content: '\f0a4';
+        }
+
+        #hand2>ul>li:before {
+            content: '\f0a4';
+            color: deepskyblue;
+        }
+
+        #square1>ul>li:before {
+            content: '\f0c8';
+        }
+
+        #square2>ul>li:before {
+            content: '\f0c8';
+            color: darkseagreen;
+        }
+
+        #square3>ul>li:before {
+            content: '\f0c8';
+        }
+
+        #square4>ul>li:before {
+            content: '\f0c8';
+            color: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--initial moment-->
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+    </ul>
+
+    <hr>
+
+    <!--second list-->
+    <div id="d">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--third list-->
+    <div id="r">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--fourth list-->
+    <div id="star">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--fifth list-->
+    <div id="startwo">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--sixth list-->
+    <div id="hand">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--seventh list-->
+    <div id="hand2">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--eigth list-->
+    <div id="square1">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--eigth list-->
+    <div id="square2">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--ninth list-->
+    <div id="square3">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--tenth list-->
+    <div id="square4">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus tempora totam reprehenderit sapiente non ipsum ad animi minima iusto iure, nesciunt excepturi. Alias esse enim hic possimus veniam, quia.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aliquid, ullam. Saepe quasi quis ab ipsam consequuntur quaerat, dicta deserunt, molestias a vel reprehenderit natus ad quia fugiat facere ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro placeat animi tempora voluptatibus eos magni autem consequatur enim, molestias quia dignissimos, eveniet repudiandae quidem nam inventore similique, assumenda ab deleniti.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam, nam! A dolorum nobis harum molestias, necessitatibus aspernatur placeat unde expedita ut natus debitis, dolore exercitationem, atque quisquam reprehenderit quis.</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
