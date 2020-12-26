@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ccc;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#Testimonial {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+#Testimonial img {
+    content: attr(x);
+    position: absolute;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    padding: 80px 40px 40px;
+    transition: 0.5s;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 100px auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.box:hover {
+    background-color: coral;
+    color: white;
+    transition: 0.5s;
+}
+
+.box p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box::before,
+.box:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 60px;
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0.08;
+}
+
+.box::before {
+    content: '\f10e';
+    top: 20px;
+    right: 40px;
+}
+
+.box:after {
+    content: '\f10d';
+    bottom: 20px;
+    left: 40px;
+}
+
+.box:hover:before {
+    transform: translateY(-100px);
+    transition: 0.5s;
+}
+
+.box:hover:after {
+    transform: translateY(100px);
+    transition: 0.5s;
+}
+
+.box:hover:before,
+.box:hover:after {
+    color: white;
+    opacity: 1;
+}
+
+.box h4 {
+    margin: 20px 0 0;
+    padding: 0;
+    transition: 0.5s;
+    font-size: 18px;
+    color: #ff0057;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.box h4 span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #c5c5c5;
+    transition: 0.5s;
+}
