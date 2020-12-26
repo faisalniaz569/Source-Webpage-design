@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.column {
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+
+#NewsPostgallery,
+#newspost {
+    width: 100%;
+}
+
+.newsgallery {
+    position: relative;
+    height: 250px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+#newspost > .newsgallery > img {
+    width: 100%;
+    margin-bottom: 25px;
+    vertical-align: middle;
+}
+
+#newspost .newsgallery .date_post {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #006db7;
+    padding: 5px 14px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+#newspost .newsgallery .date_post p {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+#newspost .newsgallery .date_post p span {
+    display: block;
+    font-size: 15px;
+    padding-top: 2px;
+    margin-top: 2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.news_content {
+    background-color: burlywood;
+    width: 340px;
+    padding: 18px;
+    transition: 0.5s;
+}
+
+.news_content h2 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.news_content p {
+    font-size: 14px;
+    color: #444;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+
+.news_content a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    background-color: dodgerblue;
+    padding: 15px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.news_content a:hover {
+    background-color: orange;
+    color: whitesmoke;
+}
