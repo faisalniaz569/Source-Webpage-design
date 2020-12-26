@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:
+        /*rgba(146, 146, 146, 0.14);*/
+        #0621c7;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.container > .box {
+    position: relative;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container > .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.container > .box:nth-child(1):before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.container > .box:nth-child(2):before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.container > .box:nth-child(3):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.container > .box:nth-child(4):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+}
+
+.box > .content > h2 {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+    top: -80px;
+}
+
+.box > .content > h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: orange;
+}
+
+.box > .content > p {
+    margin: 0;
+    padding: 0;
+    color: #7b5050;
+    font-size: 16px;
+}
+
+.box > .content > a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #78269B;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #9A00E5;
+    color: #FFE4FF;
+    transform: translateY(-40px);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover > .content > a {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box > .content > a:hover {
+    color: white;
+    background-color: rgba(175, 106, 210, 0.75);
+}
